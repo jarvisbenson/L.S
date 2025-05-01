@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUSACHIO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #1764f2, #fac4c4);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .main-card {
+      padding: 2rem;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      max-width: 500px;
+      margin: 3rem auto;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: #ff4d6d;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .btn-love {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+    }
+
+    .btn-love:hover {
+      background-color: #e63950;
+    }
+
+    .grid-placeholder {
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 2px dashed #fff;
+      min-height: 120px;
+      border-radius: 12px;
+      padding: 1rem;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Musik Cinta -->
+  <audio id="loveSong" autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Grid Kenangan di Atas -->
+  <div class="container pt-5">
+    <!-- Grid besar tambahan di bagian atas -->
+    <div class="row g-4" style="margin-bottom: 2rem;">
+      <div class="col-12">
+        <div class="grid-placeholder" style="height: 800px;">
+          <h3>FOR LUSACHIO SERENHART</h3>
+          <!-- Tempat untuk gambar atau teks -->
+          <p>hai sachi ini jarvis atau biasanya kamu panggil mas ben. udah lama semenjak kita kenal ya sekitar sebulan yang lalu. aku gatau tepatnya kapan, tapi aku ngerasa nyaman sama kamu. yang jelas setiap sama kamu aku ngerasa bahagia banget. dengan obrolan random kita sehari harinya aku ngerasa kyknya memang aku tertarik sama kamu. mungkin ini bisa dibilang tiba tiba ya, tapi aku udah gabisa boongin perasaanku sendiri. aku suka kamu lebih dari sekedar teman saja. aku udah lama juga menyimpan perasaan ini. aku suka kamu. Bukan cuma karena kamu baik atau lucu, tapi karena kamu bisa bikin aku nyaman jadi diri sendiri. Setiap kali ngobrol sama kamu, rasanya waktu jadi cepat banget. Aku mulai sadar, aku selalu nunggu pesan dari kamu, selalu senyum sendiri kalau kamu cerita hal-hal receh. Awalnya aku pikir ini cuma perasaan biasa, tapi makin lama aku sadar,aku beneran jatuh hati sama kamu. Aku gak minta kamu langsung balas perasaanku, aku cuma pengen jujur, karena rasanya gak bisa menahan kalau aku terus nyimpan ini sendiri. Jadi ya, aku suka kamu</p>
+        </div>
+      </div>
+    </div>
+
+   
+  <!-- Kartu Ajakan Paling Bawah --> 
+  <div class="main-card mt-5">
+    <div class="heart mb-3">❤️</div>
+    <h2 class="fw-bold" >I've little gift for you</h2>
+    <a href="https://app.sane.fyi/public/3bde8204-e650-11ef-ad3e-4fcc2ae0ea58?utm_source=share-menu&utm_medium=web" class="btn btn-love">coba dipencet</a>
+    <p class="lead">semoga kamu suka ya hadiah kecil dari aku</p>
+    <h4>Jadi kamu mau ngga jadi pacarku?</h4>
+    <div class="d-flex justify-content-around mt-4">
+      <a href="https://t.me/mnhyungeel" class="btn btn-love" onclick="alert('makasii udah nerima akuu, chat aku ya sayangg ❤️')">YES 😉</a>
+      <button class="btn btn-outline-secondary" onclick="alert('kamu gaboleh nolak aku 😔')">NO 😔</button>
+    </div>
+  </div>
+
+  <!-- Fallback agar musik tetap bisa dimainkan -->
+  <script>
+    document.body.addEventListener('click', function () {
+      document.getElementById('loveSong').play();
+    }, { once: true });
+  </script>
+
+</body>
+</html>
+Made with ❤️ by J.Benson
